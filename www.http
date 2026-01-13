@@ -1,0 +1,32 @@
+# @settings
+followRedirect = true
+
+
+###
+GET http://localhost:3000/usuarios
+
+###
+GET http://localhost:3000/usuarios/sara
+
+###
+POST http://localhost:3000/usuarios
+content-type: application/json
+
+{
+  "nombre": "Vega",
+  "edad": "40",
+  "lugarProcedencia": "Spain"
+}
+
+###
+PUT http://localhost:3000/usuarios/ryu
+content-type: application/json
+
+{
+  "nombre": "Sara",
+  "edad": "40",
+  "lugarProcedencia": "Spain"
+}
+
+###
+DELETE http://localhost:3000/usuarios/ryu
